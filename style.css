@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #F7F8F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #ACBB78, #F7F8F8);
+background: -o-linear-gradient(left, #ACBB78, #F7F8F8);
+background: linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+user-select: none
+}
+
+
+.container {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  background-color: grey;
+  width: 300px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0 0 50px grey,0 0 80px grey,0 0 100px grey,0 0 120px grey,0 0 150px grey;
+  animation: turning 10s linear  infinite;
+  animation-fill-mode: forwards;
+
+
+}
+
+
+
+@keyframes turning {
+  0% {
+    transform: scale(1) rotate(0deg);
+
+  }
+  25% {
+
+    transform: scale(0.7) rotate(90deg);
+  }
+  50% {
+
+    transform: scale(0.4) rotate(180deg);
+  }
+  75% {
+
+    transform: scale(0.6) rotate(270deg);
+  }
+  100% {
+
+    transform: scale(1) rotate(360deg);
+  }
+
+}
+
+
+
+.btn {
+
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  box-shadow: 0 0 5px grey,0 0 20px grey,0 0 40px grey,0 0 55px grey,0 0 70px grey;
+  background-color: grey;
+  border-color: grey;
+  width: 70px;
+
+
+}
+
+
+
+
+
+
+
+
+/*bu alttakini almadım çünki JS'de psuedo class'lar yani :after   :before elementleri seçemioruz*/
+/* .btn::after {
+  content: "-----------------------------------------";
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  background-color: red;
+  color: grey;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 5px red,0 0 20px red,0 0 40px red,0 0 55px red,0 0 70px red;
+} */
+
+
+
+
+
+
+
+
+
+.heading {
+  text-align: center;
+}
+
+
+
+.rgbspan {
+  position: absolute;
+  left: 44%;
+  top: 30%;
+  border: none;
+  box-shadow: 0 0 5px grey,0 0 20px grey,0 0 40px grey,0 0 55px grey,0 0 70px grey;
+  background-color: white;
+  width: 200px;
+  color: white;
+  text-align: center;
+  border-radius: 10%;
+  user-select: all!important
+}
+
+
+#color {
+  user-select: all!important
+}
+
+
+
+
+
+.icon {
+  position: absolute;
+  left: 71%;
+  top: 50%;
+  font-size: 2rem;
+
+}
+
+
+
+/*accent-color INPUT'un iç rengini değiştirir*/
+.range {
+  position: absolute;
+  left: 71%;
+  top: 50%;
+
+}
+
+
+.rangelabel {
+  position: absolute;
+  left: 71%;
+  top: 45%;
+  font-size: 1.3rem
+}
+
+.opValue {
+  position: absolute;
+  left: 71%;
+  top: 55%;
+  font-size: 1rem
+}
+
+
+
+
+
+@media (max-width: 540px) {
+  .container {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+  }
+
+  .btn {
+
+    position: absolute;
+    left: 15%;
+    top: 50%;
+}
+
+  .rgbspan {
+    position: absolute;
+    left: 25%;
+  }
+
+}
